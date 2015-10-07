@@ -1,0 +1,26 @@
+{
+  "name": "wordee",
+  "version": "1.0.0",
+  "description": "an interactive app/cloud based on words.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshutoshPrakash/wordee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshutoshPrakash/wordee/issues"
+  },
+  "homepage": "https://github.com/AshutoshPrakash/wordee#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mysql": "^2.9.0",
+    "socket.io": "^1.3.7"
+  }
+}

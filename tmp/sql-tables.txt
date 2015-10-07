@@ -1,0 +1,18 @@
+create database wordee;
+
+CREATE TABLE users (
+  uid INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(200) NOT NULL,
+  email VARCHAR(200) NULL,
+  password VARCHAR(200) NOT NULL,
+  PRIMARY KEY (uid));
+
+ALTER TABLE users 
+ADD COLUMN last_seen TIMESTAMP NULL AFTER password,
+ADD COLUMN score INT NULL AFTER last_seen,
+ADD COLUMN rating FLOAT NULL AFTER score,
+ADD COLUMN online CHAR(1) NOT NULL AFTER rating;
+
+ALTER TABLE users 
+CHANGE COLUMN uid uid VARCHAR(200) NOT NULL ;
+
